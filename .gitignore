@@ -1,0 +1,33 @@
+# Local data and secrets must never be committed or redistributed.
+/creds*.csv
+.env*
+!.env.example
+/data/
+/audit/
+/state/
+/downloads/
+/processed/
+/full_detail/
+/requestfiles/
+/submissionfiles/
+/migrant_workflow/data/
+/migrant_workflow/parsed/
+/migrant_workflow/output/
+*.rds
+*.rda
+*.RData
+*.Rhistory
+.Rproj.user/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.parquet
+*.duckdb
+
+# Public release: only templates are tracked; local inputs stay private.
+/creds*.csv
+*.pem
+*.key
+*.p12
+*.pfx
